@@ -1,0 +1,7 @@
+node_modules/
+src/paraglide/
+**/project.inlang/*
+!**/project.inlang/settings.json
+03-browser-tests/messages/
+03-browser-tests/src/
+03-browser-tests/tests/

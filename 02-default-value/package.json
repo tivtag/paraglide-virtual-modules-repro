@@ -1,0 +1,10 @@
+{
+	"name": "repro-default-value",
+	"private": true,
+	"type": "module",
+	"devDependencies": {
+		"@inlang/paraglide-js": "3.2.0",
+		"svelte": "5.57.3",
+		"vite": "8.3.6"
+	}
+}
