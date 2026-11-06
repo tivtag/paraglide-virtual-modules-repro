@@ -4,11 +4,11 @@ Minimal reproductions for three reports about `outputStructure: "virtual-modules
 the Vite default of `@inlang/paraglide-js` since 3.0.0. Each folder is a project of
 its own, pinned to `@inlang/paraglide-js` 3.2.0.
 
-| Folder | Report |
-| --- | --- |
-| [`01-vitest-cache`](01-vitest-cache) | Vitest's module cache keeps rewritten message imports after the output structure changes outside the Vite config |
-| [`02-default-value`](02-default-value) | A message read in a default value is treated as unsafe, so the module keeps the whole barrel |
-| [`03-browser-tests`](03-browser-tests) | One module per message makes Vitest browser-mode tests several times slower than `locale-modules` |
+| Folder | Report | Issue |
+| --- | --- | --- |
+| [`01-vitest-cache`](01-vitest-cache) | Vitest's module cache keeps rewritten message imports after the output structure changes outside the Vite config | [opral/paraglide-js#878](https://github.com/opral/paraglide-js/issues/878) |
+| [`02-default-value`](02-default-value) | A message read in a default value is treated as unsafe, so the module keeps the whole barrel | [opral/paraglide-js#879](https://github.com/opral/paraglide-js/issues/879) |
+| [`03-browser-tests`](03-browser-tests) | One module per message makes Vitest browser-mode tests several times slower than `locale-modules` | [opral/paraglide-js#880](https://github.com/opral/paraglide-js/issues/880) |
 
 Requirements: Node.js 22.12 or later in 22.x, 24.x, or 26 and later (as Vite 8.3.6 and
 Vitest 5.1.0 require), and pnpm. The reported runs used Node.js 26.13.0 and pnpm 12.18.0. The inlang project loads its message
